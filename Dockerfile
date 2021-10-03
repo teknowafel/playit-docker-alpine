@@ -3,7 +3,6 @@ FROM alpine:3.14
 RUN apk -U upgrade
 
 WORKDIR /app
-COPY ./playit-linux_64-0.4.6 .
+COPY playit-linux_64-0.4.6 .
 RUN chmod +x playit-linux_64-0.4.6
-RUN ls -a
-CMD /playit-linux_64-0.4.7
+RUN ./playit-linux_64-0.4.6
